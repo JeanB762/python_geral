@@ -59,3 +59,4 @@ print('#########################')
 print(bruxo.nome)
 print(bruxo.time)
 print(bruxo.camisa)
+ 
