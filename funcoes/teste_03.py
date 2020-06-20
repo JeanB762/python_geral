@@ -6,6 +6,20 @@ def externa(id):
   def interna(nome):
     print('{} {}'.format(dic[id], nome))
   return interna
+"""
+Closure
+"""
+from pdb import set_trace
+
 
 func = externa('pt')
 func('Jean')
+func('Borges')
+
+pirata = externa('pi')
+pirata('Jean')
+pirata('Borges')
+
+english = externa('en')
+english('Jean')
+english('Borges')
