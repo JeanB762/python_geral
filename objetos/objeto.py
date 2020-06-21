@@ -14,9 +14,15 @@ class num:
   def __radd__(self, op):
     return self.numero + op
 
+  def __mul__(self, op):
+    return self.numero * op
+  
+  def __rmul__(self, op):
+    return self.numero * op
+
 n = num(8)
 print(n)
-print(n + 2)  # O metodo __add__ configura a operação entre a nossa classe + numero
-print(2 + n)  # O metodo __radd__ configura a operação entre a um numero + nossa classe
+print(n * 2)  # O metodo __mul__ configura a operação entre a nossa classe * numero
+print(2 * n)  # O metodo __rmul__ configura a operação entre a um numero * nossa classe
 
-## Agora o objeto esta apto a realizar as operações de adição com os inteiros nativos
+## Agora o objeto esta apto a realizar as operações de multiplicação com os inteiros nativos
