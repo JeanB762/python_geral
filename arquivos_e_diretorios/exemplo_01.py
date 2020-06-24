@@ -16,3 +16,7 @@ Path('xpto.txt').touch()
 shutil.copy('xpto.txt', 'xpto_1.txt')
 shutil.copy('xpto.txt', 'xpto_2.txt')
 shutil.copy('xpto.txt', 'xpto_3.txt')
+
+# print(os.getcwd())
+arquivos_aula = os.listdir('.')
+print(arquivos_aula)
