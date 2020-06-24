@@ -13,10 +13,14 @@ os.chdir('aulinha_1')
 # Criar arquivo xpto
 Path('xpto.txt').touch()
 
-shutil.copy('xpto.txt', 'xpto_1.txt')
-shutil.copy('xpto.txt', 'xpto_2.txt')
-shutil.copy('xpto.txt', 'xpto_3.txt')
+
+for el in range(1, 4):
+  shutil.copy('xpto.txt', f'xpto_{el}.txt')
 
 # print(os.getcwd())
-arquivos_aula = os.listdir('.')
-print(arquivos_aula)
+# arquivos_aula = os.listdir('.')
+# print(arquivos_aula)
+
+
+# Assertiva
+assert len(os.listdir('.')) == 4
