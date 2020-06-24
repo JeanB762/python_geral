@@ -8,5 +8,11 @@ from pathlib import Path
 if not os.path.exists('aulinha_1'):
    os.mkdir('aulinha_1')
 
+os.chdir('aulinha_1')
+
 # Criar arquivo xpto
-Path('aulinha_1/xpto.txt').touch()
+Path('xpto.txt').touch()
+
+shutil.copy('xpto.txt', 'xpto_1.txt')
+shutil.copy('xpto.txt', 'xpto_2.txt')
+shutil.copy('xpto.txt', 'xpto_3.txt')
